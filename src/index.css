@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Share Tech', sans-serif;
+}
+
+:root{
+  --text-color: #ffc477;
+  --bg-color: #370665;
+  --nav-bg-color: #75a2fc96;
+}
+
+body {
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  background:#7700ffe5;
+}
+
+main{
+  min-height: 100vh;
+  z-index: -1;
+  color: var(--text-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* code {
+  font-family: 'Share Tech', sans-serif;
+} */
