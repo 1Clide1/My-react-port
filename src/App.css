@@ -5,6 +5,7 @@
   position: relative;
   top: 20rem;
   font-size: 3rem;
+  z-index: -1;
 }
 /*-----------might use stuff below later--------- */
 /* .App-logo {
