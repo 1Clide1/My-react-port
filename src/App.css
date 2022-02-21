@@ -1,11 +1,17 @@
 .App {
   text-align: center;
 }
-.auto-typer-container{
+.auto-typer-container {
   position: relative;
   top: 20rem;
   font-size: 3rem;
   z-index: -1;
+}
+/* makes the navbar sticky */
+.nav-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 /*-----------might use stuff below later--------- */
 /* .App-logo {
