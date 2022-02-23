@@ -9,6 +9,8 @@
   --text-color: #fff0e0;
   --bg-color: #370665;
   --nav-bg-color: #75a2fc96;
+  --scroll-bg-color: #a557ffe5;
+  --scroll-hover-color: #440e77;
 }
 
 body {
@@ -24,4 +26,21 @@ main {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+/* scrollbar css */
+::-webkit-scrollbar {
+  width: 0.75em;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-bg-color);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+  border: 0.25em solid var(--bg-color);
+  border-radius: 80vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-hover-color);
+  border: 0.25em solid var(--scroll-hover-color);
 }

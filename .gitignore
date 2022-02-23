@@ -9,6 +9,7 @@
 # production
 /build
 
+# make sure to not include package-lock.json because react needs to see that to properly deploy the app and I did not know this until now :p
 # misc
 .DS_Store
 .env.local
