@@ -1,4 +1,5 @@
 /* this wraps the whole about me container */
+/* can't use z-index here because it will effect the profile icons from being able to be clicked */
 .about-me-container {
   display: flex;
   flex-direction: column;
@@ -7,13 +8,13 @@
   border-radius: 3em;
   max-height: 100vh;
   max-width: 100vw;
-  z-index: -2;
   border: 1px solid var(--white-alpha);
   background-color: var(--content-bg);
   /* gives some shadow to the element */
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
   /* not sure if the blur is even needed but added anyways */
   backdrop-filter: blur(5px);
+  z-index: 1;
 }
 /* this is the picture in the about me section */
 .profile-picture {
@@ -23,7 +24,6 @@
   border-radius: 50%;
   border: 1px solid var(--white-highlight);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-  z-index: 1;
 }
 /* about me title */
 .about-me-title {

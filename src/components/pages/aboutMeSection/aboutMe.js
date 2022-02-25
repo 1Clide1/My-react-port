@@ -1,13 +1,12 @@
 import React from "react";
 import "./aboutMe.css";
 import ProfileIcons from "../../profileIcons/profileIcons";
-
 function AboutMe() {
   return (
     <div className="about-me-container" id="About Me">
-      <ProfileIcons />
       <div>
         <h2 className="about-me-title"> About Me</h2>
+        <ProfileIcons />
       </div>
       <img
         className="profile-picture"

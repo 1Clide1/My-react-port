@@ -6,7 +6,7 @@ import AboutMe from "./components/pages/aboutMeSection/aboutMe";
 function App() {
   return (
     <div className="App" id="Home">
-      <header className="nav-header">
+      <header className="nav-header z-index">
         <Navbar />
       </header>
       <h1 className="auto-typer-container">
