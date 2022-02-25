@@ -1,0 +1,107 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3em;
+  max-height: 100vh;
+  max-width: 100vw;
+  z-index: -2;
+  border: 1px solid var(--white-alpha);
+  background-color: var(--content-bg);
+  backdrop-filter: blur(5px);
+}
+.profile-picture {
+  justify-content: flex-start;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid var(--white-highlight);
+}
+/* about me title */
+.about-me-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* this is for the about me text */
+.about-desc {
+  color: var(--text-color);
+  font-size: var(--font-size-300);
+  font-family: 300;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+/* about me container */
+.about-desc-container {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex-shrink: 1;
+}
+/* skills title */
+.skills-title {
+  text-align: center;
+  font-size: var(--font-size-500);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+}
+/* the skills */
+.skills {
+  flex: 1;
+  margin: 0 0.3rem;
+  max-width: 5rem;
+  text-align: center;
+  border: 1px solid var(--white-highlight);
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  backdrop-filter: blur(5px);
+  border-radius: 2rem;
+  z-index: 2;
+}
+/* media query for mobile menu */
+@media screen and (max-width: 721px) {
+  .profile-picture {
+    width: 90px;
+    height: 90px;
+    border: 1.5px solid var(--white-highlight);
+    margin-bottom: 0.5rem;
+  }
+  .about-me-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 1em;
+  }
+  .about-me-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .skills-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .about-desc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .skills-container {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .skills {
+    border-radius: 1rem;
+    font-size: var(--font-size-100);
+  }
+}
