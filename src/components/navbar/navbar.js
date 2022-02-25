@@ -12,13 +12,11 @@ function Navbar() {
   return (
     <nav className="navbar-container">
       <div className="logo">
-        {" "}
         <a className="logo-a" href="#About Me">
           Brandon Diaz
         </a>
       </div>
       <div className="menu-icon" onClick={handleClick}>
-        {" "}
         <i className={clicked ? "lni lni-cross-circle" : "lni lni-menu"}></i>
       </div>
       <ul className={clicked ? "nav-ul active" : "nav-ul"}>
