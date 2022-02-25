@@ -105,3 +105,19 @@
     font-size: var(--font-size-100);
   }
 }
+/* works with landscape mode */
+@media screen and (max-height: 414px) {
+  .profile-picture {
+    height: 100px;
+    width: 100px;
+  }
+  .about-me-title {
+    font-size: var(--font-size-400);
+  }
+  .about-desc {
+    font-size: var(--font-size-200);
+  }
+  .skills-title {
+    font-size: var(--font-size-400);
+  }
+}
