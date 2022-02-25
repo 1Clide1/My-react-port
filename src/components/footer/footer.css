@@ -1,15 +1,20 @@
+/* my footer container */
 .footer-container {
+  /* the way I set the html tag and the main tag I can set the margin top to pretty much whatever percentage and the footer will be forced to the bottom */
   margin-top: 15%;
+  /* to ensure that the footer will always be max width of the screen no matter the screen */
+  width: 100%;
   padding: 1em;
   text-align: center;
   color: var(--text-color);
   background-color: var(--footer-color);
 }
-
+/* for the content inside the footer */
 .footer-content {
   font-size: 2em;
   letter-spacing: 0.4rem;
 }
+/* this is for my name when you click it, it goes to my github profile */
 .github-link {
   text-decoration: none;
   color: var(--text-color);
