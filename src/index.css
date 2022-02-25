@@ -1,3 +1,7 @@
+/* mainly to keep the footer in check */
+html {
+  height: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +10,33 @@
 }
 
 :root {
+  /* site wide colors */
   --text-color: #fff0e0;
   --bg-color: #370665;
+  --body-bg-color: #7700ffe5;
+  --footer-color: #6819c2;
   --nav-bg-color: #75a2fc96;
+  --content-bg: #75a2fc77;
   --scroll-bg-color: #a557ffe5;
   --scroll-hover-color: #440e77;
+  --white-highlight: #ffffff;
+  --white-alpha: rgba(255, 255, 255, 0.151);
+  /* font size */
+  --font-size-100: 0.5rem;
+  --font-size-200: 1.2rem;
+  --font-size-300: 1.5rem;
+  --font-size-400: 2rem;
+  --font-size-500: 3rem;
+  /* scroll effect */
+  scroll-behavior: smooth;
+  /* fixes the navbar from blocking the sections since I am using a fixed navbar */
+  scroll-padding-top: 100px;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #7700ffe5;
+  background: var(--body-bg-color);
 }
 
 main {
@@ -24,6 +44,7 @@ main {
   z-index: -1;
   color: var(--text-color);
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
 }
