@@ -1,0 +1,16 @@
+.footer-container {
+  margin-top: 15%;
+  padding: 1em;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--footer-color);
+}
+
+.footer-content {
+  font-size: 2em;
+  letter-spacing: 0.4rem;
+}
+.github-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
