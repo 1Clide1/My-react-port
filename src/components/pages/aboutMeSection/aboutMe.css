@@ -10,6 +10,9 @@
   z-index: -2;
   border: 1px solid var(--white-alpha);
   background-color: var(--content-bg);
+  /* gives some shadow to the element */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  /* not sure if the blur is even needed but added anyways */
   backdrop-filter: blur(5px);
 }
 /* this is the picture in the about me section */
@@ -19,6 +22,8 @@
   height: 150px;
   border-radius: 50%;
   border: 1px solid var(--white-highlight);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 /* about me title */
 .about-me-title {
@@ -129,7 +134,7 @@
   }
 }
 /* works with landscape mode */
-@media screen and (max-height: 414px) {
+@media screen and (max-height: 450px) {
   .about-desc {
     font-size: var(--font-size-100);
   }

@@ -1,6 +1,7 @@
 // import what I need
 import React from "react";
 import "./footer.css";
+import ProfileIcons from "../profileIcons/profileIcons";
 
 function Footer() {
   return (
@@ -17,6 +18,7 @@ function Footer() {
         </a>
         &copy;2022
       </p>
+      <ProfileIcons />
     </section>
   );
 }

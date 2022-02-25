@@ -1,0 +1,11 @@
+.profile-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icons {
+  margin: 0 0.5rem;
+  font-size: var(--font-size-200);
+  text-decoration: none;
+  color: var(--text-color);
+}
