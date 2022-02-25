@@ -1,3 +1,4 @@
+/* this wraps the whole about me container */
 .about-me-container {
   display: flex;
   flex-direction: column;
@@ -11,29 +12,31 @@
   background-color: var(--content-bg);
   backdrop-filter: blur(5px);
 }
+/* this is the picture in the about me section */
 .profile-picture {
   justify-content: flex-start;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 1px solid var(--white-highlight);
 }
 /* about me title */
 .about-me-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: var(--font-size-500);
+  font-weight: 800;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 /* this is for the about me text */
 .about-desc {
   color: var(--text-color);
-  font-size: var(--font-size-300);
-  font-family: 300;
+  font-size: var(--font-size-200);
+  font-weight: 200;
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 }
-/* about me container */
+/* this is for the div that wraps the about me description and the skills/skills title*/
 .about-desc-container {
   flex-wrap: wrap;
   flex-basis: 100%;
@@ -43,9 +46,11 @@
 .skills-title {
   text-align: center;
   font-size: var(--font-size-500);
+  font-weight: 800;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+/* div that wraps the skills */
 .skills-container {
   display: flex;
   justify-content: center;
@@ -54,6 +59,8 @@
 .skills {
   flex: 1;
   margin: 0 0.3rem;
+  font-size: var(--font-size-200);
+  font-weight: 300;
   max-width: 5rem;
   text-align: center;
   border: 1px solid var(--white-highlight);
@@ -78,13 +85,13 @@
   }
   .about-me-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--font-size-500);
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
   }
   .skills-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--font-size-500);
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
   }
@@ -92,7 +99,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem;
-    font-size: 0.7rem;
+    font-size: var(--font-size-100);
   }
   .skills-container {
     display: flex;
@@ -105,8 +112,8 @@
     font-size: var(--font-size-100);
   }
 }
-/* works with landscape mode */
-@media screen and (max-height: 414px) {
+/* landscape mode 480px long */
+@media screen and (max-height: 480px) {
   .profile-picture {
     height: 100px;
     width: 100px;
@@ -114,10 +121,19 @@
   .about-me-title {
     font-size: var(--font-size-400);
   }
-  .about-desc {
-    font-size: var(--font-size-200);
-  }
   .skills-title {
     font-size: var(--font-size-400);
+  }
+}
+/* works with landscape mode */
+@media screen and (max-height: 414px) {
+  .about-desc {
+    font-size: var(--font-size-100);
+  }
+}
+/* landscape mode for 373px long */
+@media screen and (max-height: 373px) {
+  .about-desc {
+    font-size: var(--font-size-100);
   }
 }
