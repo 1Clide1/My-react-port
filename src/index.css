@@ -16,7 +16,7 @@ html {
   --body-bg-color: #7700ffe5;
   --footer-color: #6819c2;
   --nav-bg-color: #75a2fc96;
-  --content-bg: #75a2fc77;
+  --content-bg: #6292f177;
   --scroll-bg-color: #a557ffe5;
   --scroll-hover-color: #440e77;
   --white-highlight: #ffffff;
@@ -31,7 +31,7 @@ html {
   /* this scroll effect only works in modern browsers this also does not work on iphone because this css does not work in safari */
   scroll-behavior: smooth;
   /* fixes the navbar from blocking the sections since I am using a fixed navbar */
-  scroll-padding-top: 100px;
+  scroll-padding-top: -30px;
 }
 
 body {
@@ -43,7 +43,6 @@ body {
 main {
   min-height: 100vh;
   z-index: -1;
-  color: var(--text-color);
   display: flex;
   flex-direction: column;
   text-align: center;

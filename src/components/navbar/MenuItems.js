@@ -12,7 +12,7 @@ export const MenuItems = [
   },
   {
     name: "My Work",
-    url: "#Projects",
+    url: "#My Work",
     cName: "navbar-links",
   },
   {
