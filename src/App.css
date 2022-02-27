@@ -1,7 +1,10 @@
 .auto-typer-container {
-  position: relative;
+  position: block;
+  display: flex;
+  flex-direction: column;
   top: 10rem;
-  margin-bottom: 50rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   text-align: center;
   color: var(--text-color);
   font-size: 3rem;

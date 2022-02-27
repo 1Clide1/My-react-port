@@ -25,11 +25,13 @@
   /* this is to match the background as my website since that is also moving with the slider */
   background-color: #841aff;
 }
-.swiper-slide img {
-  display: block;
+/* for the images inside the swiper js aka the card images*/
+.swiper-slide .work-img {
+  display: inline-block;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  /* object-fit: cover; */
 }
 /* css for the elements being swiped through */
 /* container to hold the title and the description */
@@ -37,8 +39,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 3rem;
-  border-radius: 3em;
+  padding: 2rem;
+  border-radius: 0.9em;
   max-height: 100vh;
   max-width: 100vw;
   background-color: var(--content-bg);
@@ -47,6 +49,7 @@
 }
 /* title for the begining element */
 .my-work-title {
+  align-self: center;
   font-size: var(--font-size-500);
   font-weight: 800;
   color: var(--text-color);
@@ -57,4 +60,28 @@
   font-size: var(--font-size-300);
   font-weight: 300;
   color: var(--text-color);
+}
+/* these are going to be the card elements for the projects or work same classes for one look*/
+
+/* container for the card */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30rem;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 0.3em;
+  background-color: var(--content-bg);
+  border: 1px solid var(--white-alpha);
+}
+/* title for the card */
+.work-title-container {
+  font-size: var(--font-size-500);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+/* title for the card */
+.work-title {
 }
