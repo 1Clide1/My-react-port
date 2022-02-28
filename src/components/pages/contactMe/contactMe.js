@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import "./contactMe.css";
 
 function ContactMe() {
-  //this is for the email js for the contact form since i did not want to make a whole backend server for one form.g
+  //this is for the email js for the contact form since i did not want to make a whole backend server for one form
   const sendEmail = (e) => {
     e.preventDefault();
 
