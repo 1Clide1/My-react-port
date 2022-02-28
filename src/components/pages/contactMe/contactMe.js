@@ -1,11 +1,10 @@
 // import react and css
-import React, { useRef } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import "./contactMe.css";
 
 function ContactMe() {
-  //this is for the email js for the contact form since i did not want to make a whole backend server for one form
-  const form = useRef();
+  //this is for the email js for the contact form since i did not want to make a whole backend server for one form.g
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -83,5 +82,5 @@ function ContactMe() {
     </div>
   );
 }
-
+// export contactme form
 export default ContactMe;
