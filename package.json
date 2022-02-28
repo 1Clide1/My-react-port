@@ -2,6 +2,7 @@
   "name": "my-react-port",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://1clide1.github.io/My-react-port/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
