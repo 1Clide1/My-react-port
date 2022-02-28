@@ -1,5 +1,6 @@
 // import react and css
 import React from "react";
+// import { useEffect } from "react";
 import "./myWork.css";
 // import swiper js to get the cool carousel slider
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +11,31 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 function MyWork() {
+  // leaving my animate functions commented out until I figure out how to incopriate this after the page loads
+
+  // get the work container that way I do not need to use it throughout all of the functions
+  //   const workContainer = document.querySelector(".work-container");
+  // card animation
+  //   function cardAnimate() {
+  //     workContainer.addEventListener("mousemove", (e) => {
+  //       let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+  //       let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  //       workContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  //     });
+  //   }
+  //   when mouses enters animation
+  //   function enterAnimate() {
+  //     workContainer.addEventListener("mouseenter", () => {
+  //       workContainer.style.transition = "none";
+  //     });
+  //   }
+  // on mouse leave stop the animation
+  //   function leaveAnimate() {
+  //     workContainer.addEventListener("mouseleave", () => {
+  //       workContainer.style.transition = "all 0.5s ease";
+  //       workContainer.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  //     });
+  //   }
   return (
     <Swiper
       pagination={{
@@ -30,7 +56,12 @@ function MyWork() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="work-container">
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
             <div className="work-title-container">
               <h3 className="work-title"> Tech Blog</h3>
               <hr />
@@ -48,8 +79,132 @@ function MyWork() {
             </a>
           </div>
         </SwiperSlide>
-        <SwiperSlide>fes</SwiperSlide>
-        <SwiperSlide>fsefe</SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
+              <h3 className="work-title"> Employee Tracker</h3>
+              <hr />
+            </div>
+            <a
+              href="https://github.com/1Clide1/Company-Employee-Tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={
+                  process.env.PUBLIC_URL + "/Assets/Images/employee-tracker.png"
+                }
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
+              <h3 className="work-title"> Javascript Quiz</h3>
+              <hr />
+            </div>
+            <a
+              href="https://1clide1.github.io/Brandon-s-Quiz-Show-/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={process.env.PUBLIC_URL + "/Assets/Images/quiz-show.png"}
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
+              <h3 className="work-title"> Backend E-comerce API</h3>
+              <hr />
+            </div>
+            <a
+              href="https://github.com/1Clide1/Backend-On-A-E-commerce-site"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={
+                  process.env.PUBLIC_URL + "/Assets/Images/backend-ecomerce.png"
+                }
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
+              <h3 className="work-title"> Work Scheduler</h3>
+              <hr />
+            </div>
+            <a
+              href="https://1clide1.github.io/My-Daily-Planner-Website-App/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={
+                  process.env.PUBLIC_URL + "/Assets/Images/work-scheduler.png"
+                }
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
+              <h3 className="work-title"> Readme Generator</h3>
+              <hr />
+            </div>
+            <a
+              href="https://github.com/1Clide1/My-Readme-Generator-Inquirer-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={process.env.PUBLIC_URL + "/Assets/Images/readme-gen.png"}
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
       </div>
     </Swiper>
   );
