@@ -6,6 +6,7 @@ import Typical from "./components/autoTyper/autoTyper";
 import Footer from "./components/footer/footer";
 import AboutMe from "./components/pages/aboutMeSection/aboutMe";
 import MyWork from "./components/pages/myWork/myWork";
+import ContactMe from "./components/pages/contactMe/contactMe";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <main>
         <MyWork />
         <AboutMe />
+        <ContactMe />
       </main>
       <Footer />
     </div>
