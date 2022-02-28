@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/My-react-port/static/css/main.d7bfb49b.css",
+    "main.js": "/My-react-port/static/js/main.20846669.js",
+    "index.html": "/My-react-port/index.html",
+    "main.d7bfb49b.css.map": "/My-react-port/static/css/main.d7bfb49b.css.map",
+    "main.20846669.js.map": "/My-react-port/static/js/main.20846669.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7bfb49b.css",
+    "static/js/main.20846669.js"
+  ]
+}
