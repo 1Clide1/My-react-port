@@ -31,7 +31,7 @@ html {
   /* this scroll effect only works in modern browsers this also does not work on iphone because this css does not work in safari */
   scroll-behavior: smooth;
   /* fixes the navbar from blocking the sections since I am using a fixed navbar */
-  scroll-padding-top: -30px;
+  scroll-padding-top: 60px;
 }
 
 body {

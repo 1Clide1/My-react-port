@@ -29,7 +29,7 @@ function ContactMe() {
   };
 
   return (
-    <div className="contact-me-container">
+    <div className="contact-me-container" id="Contact Me">
       <div className="form-title-container">
         <h2 className="form-title"> Contact Me</h2>
       </div>
