@@ -9,7 +9,6 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Credits](#Credits)
-- [License](#License)
 - [Technology](#Technology)
 
 ## Description
@@ -48,31 +47,3 @@ You can use this app to get an idea of what I do and what I am about, my project
 ## Credits
 
 This project was honestly hard and time consuming to make I feel like I used a lot of resources to find what I needed and I used all of my css knowledge to fully create this. The biggest challenge was trying to get the github pages npm to work but luckily I did find the answer and was able to push my project out to the github pages. Other than that it was also hard to really make this website responsive and useable for multiple screen sizes I feel like I still need to tweak the about section on certain screen sizes however for what I have right now I think it will be okay. I still want to keep improving this app so I don't think I will ever be fully finished with this portfolio app but where I am at I think I did a pretty good job.
-
-## License
-
-![License](https://img.shields.io/static/v1?label=license&message=MIT&color=yellow)
-
-This project is licensed under the MIT License: To get a better look at [License] visit (https://choosealicense.com/licenses/mit/).
-
-      MIT License
-
-      Copyright (c) [2021] []
-
-      Permission is hereby granted, free of charge, to any person obtaining a copy
-      of this software and associated documentation files (the "Software"), to deal
-      in the Software without restriction, including without limitation the rights
-      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-      copies of the Software, and to permit persons to whom the Software is
-      furnished to do so, subject to the following conditions:
-
-      The above copyright notice and this permission notice shall be included in all
-      copies or substantial portions of the Software.
-
-      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-      SOFTWARE.
