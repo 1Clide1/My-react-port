@@ -1,0 +1,57 @@
+/* css for the entire form section */
+/* just want to give this section some margin that way it is properly spaced out */
+/* also to give everything a nice background */
+.contact-me-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3em;
+  padding: 1rem;
+  max-height: 100vh;
+  max-width: 100vw;
+  border: 1px solid var(--white-alpha);
+  background-color: var(--content-bg);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.19);
+}
+/* this is for the title container */
+.form-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+/* this is for the title itself */
+.form-title {
+  color: var(--text-color);
+  font-size: var(--font-size-500);
+  font-weight: 800;
+}
+
+/* this is for the input and textarea elements all are going to have the same style */
+.form-elements {
+  width: 50%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--scroll-hover-color);
+  font-size: var(--font-size-300);
+  font-weight: 300;
+}
+/* this is for the form button */
+.form-btn {
+  font-size: var(--font-size-200);
+  padding: 1em;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--nav-bg-color);
+}
+/* this is for the button hover effect */
+.form-btn:hover {
+  cursor: pointer;
+  background-color: var(--content-bg);
+}
+
+@media screen and (max-width: 573px) {
+  .form-btn {
+    padding: 0.3em;
+  }
+}
