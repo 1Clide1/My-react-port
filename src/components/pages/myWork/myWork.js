@@ -38,10 +38,18 @@ function MyWork() {
   //   }
   return (
     <Swiper
-      pagination={{
-        dynamicBullets: true,
-      }}
+      // settings for swiper js
       modules={[Pagination]}
+      pagination={
+        ({ dynamicBullets: true },
+        true,
+        {
+          clickable: true,
+        })
+      }
+      grabCursor={true}
+      loop={true}
+      preventClicks={true}
       className="mySwiper"
       id="My Work"
     >
@@ -50,8 +58,9 @@ function MyWork() {
           <div className="my-work-title-container">
             <h2 className="my-work-title"> Welcome To My Work</h2>
             <p className="work-desc">
-              This is a selection of my work, swipe through to see my projects.
-              If a project intrests you, click on the project to check it out!
+              To see the projects, grab and swipe &#8592; left through to see my
+              projects. If a project intrests you, click on the project to check
+              it out!
             </p>
           </div>
         </SwiperSlide>

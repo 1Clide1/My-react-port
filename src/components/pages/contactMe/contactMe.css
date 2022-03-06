@@ -2,6 +2,10 @@
 /* just want to give this section some margin that way it is properly spaced out */
 /* also to give everything a nice background */
 .contact-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 3em;
@@ -18,6 +22,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 /* this is for the title itself */
 .form-title {
@@ -49,9 +54,42 @@
   cursor: pointer;
   background-color: var(--content-bg);
 }
+span {
+  display: none;
+  font-size: var(--font-size-200);
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+  color: rgb(253, 128, 128);
+}
+/* error handling */
+input:invalid[focus="true"] ~ span {
+  display: block;
+}
+
+textarea:invalid[focus="true"] ~ span {
+  display: block;
+}
+textarea:invalid[focus="true"],
+input:invalid[focus="true"] {
+  border: 2px solid rgb(253, 128, 128);
+}
 /* this is for the mobile view of the contact form */
 @media screen and (max-width: 573px) {
+  .contact-me-container {
+    padding: 2rem;
+  }
   .form-btn {
     padding: 0.3em;
+  }
+}
+@media screen and (max-height: 644px) {
+  .contact-me-container {
+    padding: 0rem;
+  }
+  .form-btn {
+    padding: 0.3em;
+  }
+  .form-elements {
+    width: 30%;
   }
 }
