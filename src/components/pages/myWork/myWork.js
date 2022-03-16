@@ -72,6 +72,30 @@ function MyWork() {
             className="work-container"
           >
             <div className="work-title-container">
+              <h3 className="work-title"> Parlay Owl 🦉</h3>
+              <hr />
+            </div>
+            <a
+              href="https://calm-brook-70069.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={process.env.PUBLIC_URL + "/Assets/Images/parlay.png"}
+                alt="tech-blog"
+              />
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            // onMouseMove={cardAnimate}
+            // onMouseEnter={enterAnimate}
+            // onMouseLeave={leaveAnimate}
+            className="work-container"
+          >
+            <div className="work-title-container">
               <h3 className="work-title"> Tech Blog</h3>
               <hr />
             </div>

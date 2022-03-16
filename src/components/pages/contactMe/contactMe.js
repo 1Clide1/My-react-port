@@ -10,6 +10,7 @@ function ContactMe() {
   const handleFocus = (e) => {
     leaveFocus(true);
   };
+  console.log(initialForm);
   return (
     <div className="contact-me-container" id="Contact Me">
       <div className="form-title-container">
