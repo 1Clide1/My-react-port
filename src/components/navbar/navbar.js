@@ -30,6 +30,16 @@ function Navbar() {
             </li>
           );
         })}
+        {/* link to download resume */}
+        <li>
+          <a
+            className="navbar-links"
+            href="../../resume/BrandonDiaz.docx"
+            download="Brandon Diaz Resume"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   );
