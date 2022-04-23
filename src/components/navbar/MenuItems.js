@@ -4,7 +4,7 @@
 // make sure to export this
 export const MenuItems = [
   {
-    name: "Home",
+    name: "Welcome",
     // url is just short for href
     url: "#Home",
     // cName is just short for class name
