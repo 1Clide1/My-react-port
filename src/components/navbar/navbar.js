@@ -11,6 +11,10 @@ function Navbar() {
   const handleClick = () => {
     setClick(!clicked);
   };
+  // this closes the li elements in the navbar
+  const closeMenu = () => {
+    setClick(!clicked);
+  };
   return (
     <nav className="navbar-container">
       <div className="logo">
@@ -25,7 +29,7 @@ function Navbar() {
         {MenuItems.map((item, index) => {
           return (
             // make sure li always has a key
-            <li key={index}>
+            <li key={index} onClick={closeMenu}>
               <a className={item.cName} href={item.url}>
                 {item.name}
               </a>
