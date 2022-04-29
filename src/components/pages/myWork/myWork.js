@@ -58,9 +58,9 @@ function MyWork() {
           <div className="my-work-title-container">
             <h2 className="my-work-title"> Welcome To My Work</h2>
             <p className="work-desc">
-              To see the projects, grab and swipe &#8592; left through to see my
-              projects. If a project intrests you, click on the project to check
-              it out!
+              To see the projects, (hold click and) swipe &#8592; left or
+              (click) tap on the bullet points to see my projects. If a project
+              intrests you, click on the project to check it out!
             </p>
           </div>
         </SwiperSlide>
@@ -86,6 +86,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              An app to check out the latest sports bets and to find a cool
+              sports bar near you!
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -110,6 +114,9 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              A blog focused on all things tech, check it out!
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -136,6 +143,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              A terminal app for a company to view their employees and add new
+              employees to the company.
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -160,6 +171,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              A fun short quiz app testing your knowledge about Javascript. Can
+              you answer all the questions right?
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -186,6 +201,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              A custom api for an e-commerce website powered by Javascript,
+              express, and MySQL.
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -212,6 +231,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              A cool app to help maintain and write down all your activities
+              throughout your work day.
+            </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -236,6 +259,10 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <p className="app-desc">
+              Super useful terminal app that helps generate markdown ReadMes
+              just by filling out a series of questions.
+            </p>
           </div>
         </SwiperSlide>
       </div>

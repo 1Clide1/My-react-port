@@ -101,3 +101,9 @@
   font-weight: 500;
   color: var(--text-color);
 }
+/* a short description about the project/app */
+.app-desc {
+  font-size: var(--font-size-150);
+  font-weight: 100;
+  color: var(--text-color);
+}
