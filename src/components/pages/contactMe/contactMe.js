@@ -15,6 +15,11 @@ function ContactMe() {
     <div className="contact-me-container" id="Contact Me">
       <div className="form-title-container">
         <h2 className="form-title"> Contact Me</h2>
+        <h2 className="form-title ">
+          <a className="email" href="mailto:brandonjustindiaz@yahoo.com">
+            Or Email Me
+          </a>
+        </h2>
       </div>
       <div className="form-container">
         <form onSubmit={sendEmail}>

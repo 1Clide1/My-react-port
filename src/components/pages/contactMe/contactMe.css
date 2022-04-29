@@ -74,6 +74,12 @@ textarea:invalid[focus="true"],
 input:invalid[focus="true"] {
   border: 2px solid rgb(253, 128, 128);
 }
+.email {
+  flex-wrap: wrap;
+  font-size: var(--font-size-200);
+  color: var(--text-color);
+  text-decoration: none;
+}
 /* this is for the mobile view of the contact form */
 @media screen and (max-width: 573px) {
   .contact-me-container {
