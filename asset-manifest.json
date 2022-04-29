@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/My-react-port/static/css/main.f9028b26.css",
-    "main.js": "/My-react-port/static/js/main.2521165f.js",
+    "main.css": "/My-react-port/static/css/main.750abcab.css",
+    "main.js": "/My-react-port/static/js/main.34a07135.js",
     "static/media/BrandonDiaz.docx": "/My-react-port/static/media/BrandonDiaz.cc145a756dbe1ee52117.docx",
     "index.html": "/My-react-port/index.html",
-    "main.f9028b26.css.map": "/My-react-port/static/css/main.f9028b26.css.map",
-    "main.2521165f.js.map": "/My-react-port/static/js/main.2521165f.js.map"
+    "main.750abcab.css.map": "/My-react-port/static/css/main.750abcab.css.map",
+    "main.34a07135.js.map": "/My-react-port/static/js/main.34a07135.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9028b26.css",
-    "static/js/main.2521165f.js"
+    "static/css/main.750abcab.css",
+    "static/js/main.34a07135.js"
   ]
 }
