@@ -21,8 +21,7 @@ This app is as the title says a cool portfolio that I made with react. If someon
 
 ## Links To Portfolio
 
-heroku link: [click here to view my portfolio on heroku](https://bjd-my-react-port.herokuapp.com/)
-github pages link: [click here to view my portfolio on github pages](https://1clide1.github.io/My-react-port/)
+[click here to view my portfolio](https://1clide1.github.io/My-react-port/)
 
 ## Technology
 
