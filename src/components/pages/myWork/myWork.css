@@ -31,8 +31,8 @@
   position: relative;
   right: 0.5rem;
   align-items: center;
-  width: 550px;
-  height: 300px;
+  width: 500px;
+  height: auto;
   object-fit: contain;
 }
 @media screen and (max-width: 603px) {
@@ -53,7 +53,7 @@
   flex-wrap: wrap;
   padding: 2rem;
   border-radius: 0.9em;
-  max-height: 100vh;
+  max-height: auto;
   max-width: 100vw;
   background-color: var(--content-bg);
   border: 1px solid var(--white-alpha);
@@ -103,7 +103,16 @@
 }
 /* a short description about the project/app */
 .app-desc {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-size: var(--font-size-150);
   font-weight: 100;
   color: var(--text-color);
+}
+.github-icon {
+  color: var(--text-color);
+  font-size: var(--font-size-400);
+}
+.github-icon:hover {
+  color: #ffffff;
 }

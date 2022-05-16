@@ -86,6 +86,14 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
+            <a
+              className="github-icon"
+              href="https://github.com/BMArsenault/ParlayOwl/tree/develop"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="lni lni-github"></i>
+            </a>
             <p className="app-desc">
               An app to check out the latest sports bets and to find a cool
               sports bar near you!
@@ -113,6 +121,14 @@ function MyWork() {
                 src={process.env.PUBLIC_URL + "/Assets/Images/tech-blog.png"}
                 alt="tech-blog"
               />
+            </a>
+            <a
+              className="github-icon"
+              href="https://github.com/1Clide1/Cool-Tech-Blog"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="lni lni-github"></i>
             </a>
             <p className="app-desc">
               A blog focused on all things tech, check it out!
@@ -170,6 +186,14 @@ function MyWork() {
                 src={process.env.PUBLIC_URL + "/Assets/Images/quiz-show.png"}
                 alt="tech-blog"
               />
+            </a>
+            <a
+              className="github-icon"
+              href="https://github.com/1Clide1/Brandon-s-Quiz-Show-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="lni lni-github"></i>
             </a>
             <p className="app-desc">
               A fun short quiz app testing your knowledge about Javascript. Can
@@ -230,6 +254,14 @@ function MyWork() {
                 }
                 alt="tech-blog"
               />
+            </a>
+            <a
+              className="github-icon"
+              href="https://github.com/1Clide1/My-Daily-Planner-Website-App"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="lni lni-github"></i>
             </a>
             <p className="app-desc">
               A cool app to help maintain and write down all your activities
