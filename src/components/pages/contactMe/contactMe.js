@@ -5,10 +5,19 @@ import "./contactMe.css";
 
 function ContactMe() {
   const { handleChange, initialForm, sendEmail, errors } = useForm();
-  const [focus, leaveFocus] = useState(false);
+  // states for all input fields that way I can properly display the form validation
+  const [nameFocus, leaveFocus] = useState(false);
+  const [emailFocus, leaveEmailFocus] = useState(false);
+  const [subjectFocus, leaveSubjectFocus] = useState(false);
+  const [messageFocus, leaveMessageFocus] = useState(false);
 
   const handleFocus = (e) => {
-    leaveFocus(true);
+    if (e.target.name === "name") leaveFocus(!nameFocus);
+    else if (e.target.name === "email") leaveEmailFocus(!emailFocus);
+    else if (e.target.name === "subject") leaveSubjectFocus(!subjectFocus);
+    else {
+      leaveMessageFocus(!messageFocus);
+    }
   };
   console.log(initialForm);
   return (
@@ -38,7 +47,7 @@ function ContactMe() {
                 value={initialForm.name}
                 onChange={handleChange}
                 onBlur={handleFocus}
-                focus={focus.toString()}
+                focus={nameFocus.toString()}
               />
               <span>{errors.name}</span>
             </div>
@@ -52,8 +61,8 @@ function ContactMe() {
                 required={true}
                 value={initialForm.email}
                 onChange={handleChange}
-                onFocus={handleFocus}
-                focus={focus.toString()}
+                onBlur={handleFocus}
+                focus={emailFocus.toString()}
               />
               <span> {errors.email} </span>
             </div>
@@ -68,7 +77,7 @@ function ContactMe() {
                 value={initialForm.subject}
                 onChange={handleChange}
                 onBlur={handleFocus}
-                focus={focus.toString()}
+                focus={subjectFocus.toString()}
               />
               <span> {errors.subject} </span>
             </div>
@@ -84,7 +93,7 @@ function ContactMe() {
                 value={initialForm.message}
                 onChange={handleChange}
                 onBlur={handleFocus}
-                focus={focus.toString()}
+                focus={messageFocus.toString()}
               />
 
               <span> {errors.message} </span>
