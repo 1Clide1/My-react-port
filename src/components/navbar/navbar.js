@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 // importing the resume that way I can guarantee the proper download
-import resume from "../../resume/BrandonDiaz.docx";
+import resume from "../../resume/Brandon-Diaz-Resume.pdf";
 // make sure to just use a function when creating components that way you can actually use proper vars inside to create more complex html elements
 function Navbar() {
   // setting the state of the mobile navbar menu
@@ -41,7 +41,7 @@ function Navbar() {
           <a
             className="navbar-links"
             href={resume}
-            download="Brandon Diaz Resume.docx"
+            download="Brandon Diaz Resume.pdf"
           >
             Resume
           </a>
