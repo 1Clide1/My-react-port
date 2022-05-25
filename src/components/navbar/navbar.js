@@ -1,5 +1,5 @@
 // make sure to captialize react when importing react when using a funciton and return
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 // importing the resume that way I can guarantee the proper download
@@ -15,8 +15,30 @@ function Navbar() {
   const closeMenu = () => {
     setClick(!clicked);
   };
+  // custom hook to close mobile menu
+  const useClickOutside = () => {
+    // creating a refrence
+    let domNode = useRef();
+    useEffect(() => {
+      let handler = (e) => {
+        if (!domNode.current?.contains(e.target)) {
+          setClick(false);
+        } else {
+          return null;
+        }
+      };
+      document.addEventListener("click", handler);
+      return () => {
+        document.removeEventListener("click", handler);
+      };
+    });
+    return domNode;
+  };
+  let domNode = useClickOutside(() => {
+    closeMenu();
+  });
   return (
-    <nav className="navbar-container">
+    <nav ref={domNode} className="navbar-container">
       <div className="logo">
         <a className="logo-a" href="#About Me">
           Brandon Diaz
