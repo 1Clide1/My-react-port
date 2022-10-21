@@ -61,6 +61,7 @@
 .skills-container {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 /* the skills */
 .skills {
@@ -68,13 +69,12 @@
   margin: 0 0.3rem;
   font-size: var(--font-size-200);
   font-weight: 300;
-  max-width: 5rem;
-  text-align: center;
   border: 1px solid var(--white-highlight);
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   backdrop-filter: blur(5px);
   border-radius: 2rem;
+  padding: 0.3rem;
   z-index: 2;
 }
 /* media query for mobile menu */
@@ -148,6 +148,5 @@
 @media screen and (max-height: 373px) {
   .skills {
     font-size: 0.5rem;
-    max-width: 3rem;
   }
 }

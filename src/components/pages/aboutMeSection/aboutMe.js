@@ -28,11 +28,11 @@ function AboutMe() {
         </p>
         <h3 className="skills-title">My Skills</h3>
         <section className="skills-container">
-          <p className="skills"> Javascript</p>
-          <p className="skills"> HTML </p>
-          <p className="skills"> CSS </p>
+          <p className="skills"> Full Stack Dev </p>
           <p className="skills"> Node JS </p>
           <p className="skills"> React </p>
+          <p className="skills"> Javascript</p>
+          <p className="skills"> Graphql </p>
           <p className="skills"> MySQL </p>
           <p className="skills"> MongoDB </p>
         </section>
