@@ -11,31 +11,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 function MyWork() {
-  // leaving my animate functions commented out until I figure out how to incopriate this after the page loads
-
-  // get the work container that way I do not need to use it throughout all of the functions
-  //   const workContainer = document.querySelector(".work-container");
-  // card animation
-  //   function cardAnimate() {
-  //     workContainer.addEventListener("mousemove", (e) => {
-  //       let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-  //       let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-  //       workContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-  //     });
-  //   }
-  //   when mouses enters animation
-  //   function enterAnimate() {
-  //     workContainer.addEventListener("mouseenter", () => {
-  //       workContainer.style.transition = "none";
-  //     });
-  //   }
-  // on mouse leave stop the animation
-  //   function leaveAnimate() {
-  //     workContainer.addEventListener("mouseleave", () => {
-  //       workContainer.style.transition = "all 0.5s ease";
-  //       workContainer.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //     });
-  //   }
   return (
     <Swiper
       // settings for swiper js
@@ -54,59 +29,51 @@ function MyWork() {
       id="My Work"
     >
       <div title="My-work">
+        {/* swiper js slider containers, containing the projects and their respective descriptions */}
         <SwiperSlide>
           <div className="my-work-title-container">
             <h2 className="my-work-title"> Welcome To My Work</h2>
             <p className="work-desc">
-              To see the projects, (hold click and) swipe &#8592; left or
-              (click) tap on the bullet points to see my projects. If a project
-              intrests you, click on the project to check it out!
+              To see the projects, (grab and) swipe &#8592; left. You can also
+              (click or) tap on the bullet points to see my projects. If a
+              project intrests you, click the project to check it out! You can
+              also click the github icon to check out the repo aswell.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
+          <div className="work-container">
             <div className="work-title-container">
-              <h3 className="work-title"> Parlay Owl 🦉</h3>
+              <h3 className="work-title"> Keep Da Change </h3>
               <hr />
             </div>
             <a
-              href="https://calm-brook-70069.herokuapp.com/"
+              href="https://keepdachange.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
                 className="work-img"
-                src={process.env.PUBLIC_URL + "/Assets/Images/parlay.png"}
-                alt="tech-blog"
+                src={process.env.PUBLIC_URL + "/Assets/Images/keepdachange.png"}
+                alt="Keep Da Change App"
               />
             </a>
             <a
               className="github-icon"
-              href="https://github.com/BMArsenault/ParlayOwl/tree/develop"
+              href="https://github.com/1Clide1/tip-calculator"
               target="_blank"
               rel="noreferrer"
             >
               <i className="lni lni-github"></i>
             </a>
             <p className="app-desc">
-              An app to check out the latest sports bets and to find a cool
-              sports bar near you!
+              When, you're spending a night out and you just need to find out
+              how much to tip for the bill? Then check out keep da change!
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
+          <div className="work-container">
             <div className="work-title-container">
               <h3 className="work-title"> Tech Blog</h3>
               <hr />
@@ -122,56 +89,13 @@ function MyWork() {
                 alt="tech-blog"
               />
             </a>
-            <a
-              className="github-icon"
-              href="https://github.com/1Clide1/Cool-Tech-Blog"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="lni lni-github"></i>
-            </a>
             <p className="app-desc">
-              A blog focused on all things tech, check it out!
+              A site dedicated to making blogposts about tech.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
-            <div className="work-title-container">
-              <h3 className="work-title"> Employee Tracker</h3>
-              <hr />
-            </div>
-            <a
-              href="https://github.com/1Clide1/Company-Employee-Tracker"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="work-img"
-                src={
-                  process.env.PUBLIC_URL + "/Assets/Images/employee-tracker.png"
-                }
-                alt="tech-blog"
-              />
-            </a>
-            <p className="app-desc">
-              A terminal app for a company to view their employees and add new
-              employees to the company.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
+          <div className="work-container">
             <div className="work-title-container">
               <h3 className="work-title"> Javascript Quiz</h3>
               <hr />
@@ -202,42 +126,7 @@ function MyWork() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
-            <div className="work-title-container">
-              <h3 className="work-title"> Backend E-comerce API</h3>
-              <hr />
-            </div>
-            <a
-              href="https://github.com/1Clide1/Backend-On-A-E-commerce-site"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="work-img"
-                src={
-                  process.env.PUBLIC_URL + "/Assets/Images/backend-ecomerce.png"
-                }
-                alt="tech-blog"
-              />
-            </a>
-            <p className="app-desc">
-              A custom api for an e-commerce website powered by Javascript,
-              express, and MySQL.
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
+          <div className="work-container">
             <div className="work-title-container">
               <h3 className="work-title"> Work Scheduler</h3>
               <hr />
@@ -270,12 +159,32 @@ function MyWork() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div
-            // onMouseMove={cardAnimate}
-            // onMouseEnter={enterAnimate}
-            // onMouseLeave={leaveAnimate}
-            className="work-container"
-          >
+          <div className="work-container">
+            <div className="work-title-container">
+              <h3 className="work-title"> Employee Tracker</h3>
+              <hr />
+            </div>
+            <a
+              href="https://github.com/1Clide1/Company-Employee-Tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="work-img"
+                src={
+                  process.env.PUBLIC_URL + "/Assets/Images/employee-tracker.png"
+                }
+                alt="tech-blog"
+              />
+            </a>
+            <p className="app-desc">
+              A terminal app for a company to view their employees and add new
+              employees to the company.
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="work-container">
             <div className="work-title-container">
               <h3 className="work-title"> Readme Generator</h3>
               <hr />
