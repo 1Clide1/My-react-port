@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/My-react-port/static/css/main.0f5c6e9a.css",
-    "main.js": "/My-react-port/static/js/main.5a1d9c48.js",
+    "main.css": "/My-react-port/static/css/main.7ee66563.css",
+    "main.js": "/My-react-port/static/js/main.ab8d4ee1.js",
     "static/media/Brandon-Diaz-Resume.pdf": "/My-react-port/static/media/Brandon-Diaz-Resume.76c9f81b6f1bf9a15653.pdf",
     "index.html": "/My-react-port/index.html",
-    "main.0f5c6e9a.css.map": "/My-react-port/static/css/main.0f5c6e9a.css.map",
-    "main.5a1d9c48.js.map": "/My-react-port/static/js/main.5a1d9c48.js.map"
+    "main.7ee66563.css.map": "/My-react-port/static/css/main.7ee66563.css.map",
+    "main.ab8d4ee1.js.map": "/My-react-port/static/js/main.ab8d4ee1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f5c6e9a.css",
-    "static/js/main.5a1d9c48.js"
+    "static/css/main.7ee66563.css",
+    "static/js/main.ab8d4ee1.js"
   ]
 }
